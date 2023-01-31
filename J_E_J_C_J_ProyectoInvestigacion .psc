@@ -406,6 +406,9 @@ Funcion PALABRAS()
 	Escribir "Ingrese Frase"
 	Leer frase
 	l = Longitud(frase) - 1
+	Si  Subcadena(frase,0,0)=" "
+		c=0
+	FinSi
 	Para pos=0 Hasta l Con Paso 1 Hacer
 		car=Subcadena(frase,pos,pos)
 		carAnterior = Subcadena(frase,pos-1,pos-1)
@@ -413,7 +416,6 @@ Funcion PALABRAS()
 			c=c+1
 		Fin Si
 	Fin Para
-	Escribir ""
 	Escribir "La frase= ",frase," tiene ",c, " palabras"
 FinFuncion
 //Cadenas 8
