@@ -84,12 +84,11 @@ Funcion suma_product()
 FinFuncion
 //Numeros 5
 funcion digit()
-	Definir num,digito,c,ac Como Entero
+	Definir num,c,ac Como Entero
 	Escribir "Ingrese Numero" Sin Saltar;Leer num
 	c=0
 	mientras num<>0 Hacer
 		Mientras num > 0 Hacer
-			digito = num mod 10
 			num = trunc(num/10)
 			c=c+1
 		Fin Mientras
@@ -118,7 +117,7 @@ FUNCION SOMOSMAS()
 			Escribir "El iva es de: ",iva," $ "
 			Escribir "El precio final de su compra es: ",PrecioT," $ "
 		SiNo
-			DESCUENTO=COMPRA*0.10
+			DESCUENTO=COMPRA*0.05
 			PDescuento=COMPRA-DESCUENTO
 			IVA=PDescuento*0.12
 			PrecioT=PDescuento+IVA
